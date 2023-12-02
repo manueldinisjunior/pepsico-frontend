@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 section{
     position: relative;
     width: 100%;
@@ -18,7 +17,6 @@ section{
     background: #0062be;
     transition: 0.5s;
 }
-
 header{
     position: absolute;
     top: 0;
@@ -29,21 +27,17 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo{
     position: relative;
     max-width: 80px;
 }
-
 header ul{
     position: relative;
     display: flex;
 }
-
 header ul li{
     list-style: none;
 }
-
 header ul li a{
     display: inline-block;
     color: #fff;
@@ -51,7 +45,6 @@ header ul li a{
     margin-left: 40px;
     text-decoration: none;
 }
-
 .content{
     position: relative;
     width: 100%;
@@ -59,13 +52,11 @@ header ul li a{
     justify-content: space-between;
     justify-items: center;
 }
-
 .content .textBox{
     position: relative;
     max-width: 600px;
     margin-top: 6%;
 }
-
 .content .textBox h2{
     color: #fff;
     font-size: 4em;
@@ -73,15 +64,12 @@ header ul li a{
     font-weight: 900;
     text-transform: uppercase;
 }
-
 .content .textBox h2 span{
     font-size: 2em;
 }
-
 .content .textBox p{
     color: #fff;
 }
-
 .content .textBox a{
     display: inline-block;
     margin-top: 20px;
@@ -94,7 +82,6 @@ header ul li a{
     text-decoration: none;
     text-transform: uppercase;
 }
-
 .content .imgBox{
     width: 600px;
     display: flex;
@@ -102,11 +89,9 @@ header ul li a{
     margin-top: 50px;
     justify-content: flex-end;
 }
-
 .content .imgBox img{
     max-width: 260px;
 }
-
 .thumb{
     position: absolute;
     left: 50%;
@@ -114,7 +99,6 @@ header ul li a{
     transform: translateX(-50%);
     display: flex;
 }
-
 .thumb li{
     list-style: none;
     display: inline-block;
@@ -122,15 +106,13 @@ header ul li a{
     cursor: pointer;
     transition: 0.5s;
 }
-
+/* Movimiento */
 .thumb li:hover{
     transform: translateY(-15px);
 }
-
 .thumb li img{
     max-width: 40px;
 }
-
 .sci{
     position: absolute;
     top: 50%;
@@ -141,11 +123,9 @@ header ul li a{
     align-items: center;
     flex-direction: column;
 }
-
 .sci li{
     list-style: none;
 }
-
 .sci li a{
     display: inline-block;
     filter: invert(1);
@@ -153,10 +133,11 @@ header ul li a{
     transform: scale(0.6);
 }
 
+/* Responsive */
 @media(max-width: 991px){
     section{
         padding: 40px;
-        padding-bottom: 150px;
+        padding-bottom: 150px; /* 120px */
     }
     header{
         padding: 20px 40px;
@@ -165,6 +146,7 @@ header ul li a{
         position: relative;
         max-width: 60px;
     }
+    /* Menu Responsive */
     header ul{
         position: fixed;
         top: 0;
@@ -180,7 +162,7 @@ header ul li a{
         visibility: hidden;
         opacity: 0;
     }
-    header ul.active{
+    header ul.active{ /* Para que aparezca el menu */
         visibility: visible;
         opacity: 1;
     }
@@ -212,8 +194,9 @@ header ul li a{
         background-position: center;
         background-size: 25px;
         background-repeat: no-repeat;
-        filter: invert(1);
+        filter: invert(1); /* Para que aparezca la 'x' */
     }
+    /* fin del menu */
     .content{
         flex-direction: column;
         margin-top: 80px;
@@ -241,7 +224,7 @@ header ul li a{
         max-width: 150px;
     }
     .thumb li img{
-        max-width: 37px;
+        max-width: 37px; /* 30px */
     }
     .sci{
         right: 0;
