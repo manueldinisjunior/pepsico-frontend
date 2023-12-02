@@ -1,0 +1,99 @@
+{
+  "store": "Your Store Name",
+  "categories": [
+    {
+      "name": "Beverages",
+      "products": [
+        {
+          "name": "Pepsi",
+          "type": "Soft Drink",
+          "flavors": ["Original", "Vanilla", "Cherry"],
+          "price": 1.99,
+          "quantity": 100
+        },
+        {
+          "name": "Mountain Dew",
+          "type": "Citrus Soda",
+          "flavors": ["Regular", "Code Red", "Citrus Blast"],
+          "price": 2.49,
+          "quantity": 80
+        },
+        // Add more beverage products as needed
+        {
+          "name": "Product Name",
+          "type": "Beverage Type",
+          "flavors": ["Flavor 1", "Flavor 2", "Flavor 3"],
+          "price": 2.99,
+          "quantity": 120
+        }
+      ]
+    },
+    {
+      "name": "Snacks",
+      "products": [
+        {
+          "name": "Lays Classic",
+          "type": "Potato Chips",
+          "quantity": 120,
+          "price": 1.79
+        },
+        {
+          "name": "Doritos",
+          "type": "Tortilla Chips",
+          "flavors": ["Cool Ranch", "Nacho Cheese", "Spicy Sweet Chili"],
+          "quantity": 90,
+          "price": 2.29
+        },
+        // Add more snack products as needed
+        {
+          "name": "Product Name",
+          "type": "Snack Type",
+          "flavors": ["Flavor 1", "Flavor 2", "Flavor 3"],
+          "price": 1.99,
+          "quantity": 150
+        }
+      ]
+    },
+    {
+      "name": "Breakfast",
+      "products": [
+        {
+          "name": "Quaker Oats",
+          "type": "Oatmeal",
+          "variations": ["Instant", "Steel Cut"],
+          "quantity": 50,
+          "price": 3.99
+        },
+        {
+          "name": "Tropicana Orange Juice",
+          "type": "Fruit Juice",
+          "flavors": ["Original", "No Pulp", "Calcium + Vitamin D"],
+          "quantity": 70,
+          "price": 2.99
+        },
+        // Add more breakfast products as needed
+        {
+          "name": "Product Name",
+          "type": "Breakfast Type",
+          "variations": ["Variation 1", "Variation 2"],
+          "price": 4.49,
+          "quantity": 60
+        }
+      ]
+    },
+    // Add more categories as needed
+    {
+      "name": "New Category",
+      "products": [
+        {
+          "name": "New Product",
+          "type": "Product Type",
+          "flavors": ["Flavor 1", "Flavor 2"],
+          "price": 2.49,
+          "quantity": 80
+        },
+        // Add more products in the new category as needed
+      ]
+    }
+  ]
+}
