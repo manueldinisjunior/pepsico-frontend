@@ -1,120 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-} 
-section{
+    transition: 0.5s ease-in-out; /* Slow transition */
+}
+
+body {
+    line-height: 1.6;
+}
+
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: #0062be;
-    transition: 0.5s;
 }
-header{
+
+header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .logo{
+
+header .logo {
     position: relative;
     max-width: 80px;
 }
-header ul{
+
+header ul {
     position: relative;
     display: flex;
 }
-header ul li{
+
+header ul li {
     list-style: none;
 }
-header ul li a{
+
+header ul li a {
     display: inline-block;
     color: #fff;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 20px;
     text-decoration: none;
 }
-.content{
+
+.content {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.content .textBox{
+
+.content .textBox {
     position: relative;
     max-width: 600px;
     margin-top: 6%;
 }
-.content .textBox h2{
+
+.content .textBox h2 {
     color: #fff;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.5em;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.content .textBox h2 span{
-    font-size: 2em;
+
+.content .textBox h2 span {
+    font-size: 1.5em;
 }
-.content .textBox p{
+
+.content .textBox p {
     color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
 }
-.content .textBox a{
+
+.content .textBox a {
     display: inline-block;
     margin-top: 20px;
-    padding: 8px 20px;
+    padding: 12px 24px;
     background: #fff;
     color: #111;
-    border-radius: 40px;
-    font-weight: 500;
+    border-radius: 8px;
+    font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out; /* Slow button transition */
 }
-.content .imgBox{
-    width: 600px;
+
+.content .textBox a:hover {
+    background: #111;
+    color: #fff;
+}
+
+.content .imgBox {
+    width: 100%;
     display: flex;
-    padding-right: 50px;
     margin-top: 50px;
-    justify-content: flex-end;
+    justify-content: center;
 }
-.content .imgBox img{
-    max-width: 260px;
+
+.content .imgBox img {
+    max-width: 100%;
+    height: auto;
 }
-.thumb{
+
+.thumb {
     position: absolute;
     left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
     display: flex;
 }
- 
-.thumb li{
+
+.thumb li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
 }
-/* Movimiento */
-.thumb li:hover{
+
+.thumb li:hover {
     transform: translateY(-15px);
 }
-.thumb li img{
+
+.thumb li img {
     max-width: 40px;
 }
-.sci{
+
+.sci {
     position: absolute;
     top: 50%;
     right: 30px;
@@ -124,112 +155,57 @@ header ul li a{
     align-items: center;
     flex-direction: column;
 }
-.sci li{
+
+.sci li {
     list-style: none;
 }
-.sci li a{
+
+.sci li a {
     display: inline-block;
     filter: invert(1);
     margin: 5px 0;
     transform: scale(0.6);
 }
 
-/* Responsive */
-@media(max-width: 991px){
-    section{
+@media(max-width: 991px) {
+    section {
         padding: 40px;
-        padding-bottom: 150px; /* 120px */
+        padding-bottom: 100px;
     }
-    header{
-        padding: 20px 40px;
+    header {
+        padding: 20px;
     }
-    header .logo{
+    header .logo {
         position: relative;
         max-width: 60px;
     }
-    /* Menu Responsive */
-    header ul{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        z-index: 1;
+    header ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 0.2s;
-        visibility: hidden;
-        opacity: 0;
     }
-    header ul.active{ /* Para que aparezca el menu */
-        visibility: visible;
-        opacity: 1;
-    }
-    header ul li a{
-        display: inline-block;
-        color: #111;
-        font-weight: 400;
-        margin-left: 0;
-        text-decoration: none;
-        font-size: 2em;
+    header ul li a {
         margin: 10px 0;
     }
-    header ul li a:hover{
-        color: #ed0023;
+    .content .textBox {
+        padding: 0 20px;
     }
-    .toggleMenu{
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background: url(img/menu.png);
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        z-index: 2;
-        cursor: pointer;
+    .content .textBox h2 {
+        font-size: 2.5em;
     }
-    .toggleMenu.active{
-        background: url(img/close.png);
-        background-position: center;
-        background-size: 25px;
-        background-repeat: no-repeat;
-        filter: invert(1); /* Para que aparezca la 'x' */
-    }
-    /* fin del menu */
-    .content{
-        flex-direction: column;
-        margin-top: 80px;
-    }
-    .content .textBox{
-        position: relative;
-        max-width: 100%;
-        padding-right: 20px;
-    }
-    .content .textBox h2{
-        font-size: 3em;
-    }
-    .content .textBox a{
+    .content .textBox a {
         font-size: 14px;
-        padding: 8px 15px;
+        padding: 10px 20px;
     }
-    .content .imgBox{
-        width: 100%;
-        display: flex;
-        padding-right: 0;
-        margin-top: 50px;
-        justify-content: center;
+    .content .imgBox img {
+        max-width: 80%;
     }
-    .content .imgBox img{
-        max-width: 150px;
+    .thumb li img {
+        max-width: 30px;
     }
-    .thumb li img{
-        max-width: 37px; /* 30px */
-    }
-    .sci{
+    .sci {
         right: 0;
         width: 50px;
-        background: rgba(0,0,0,0.2);
+        background: rgba(0, 0, 0, 0.2);
     }
 }
