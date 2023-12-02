@@ -6,25 +6,31 @@
       "products": [
         {
           "name": "Pepsi",
-          "type": "Soft Drink",
+          "type": "Soda",
           "flavors": ["Original", "Vanilla", "Cherry"],
           "price": 1.99,
           "quantity": 100
         },
         {
-          "name": "Mountain Dew",
-          "type": "Citrus Soda",
-          "flavors": ["Regular", "Code Red", "Citrus Blast"],
+          "name": "MountainDew",
+          "type": "Soda",
+          "flavors": ["Regular", "CodeRed", "CitrusBlast"],
           "price": 2.49,
           "quantity": 80
         },
-        // Add more beverage products as needed
         {
-          "name": "Product Name",
-          "type": "Beverage Type",
-          "flavors": ["Flavor 1", "Flavor 2", "Flavor 3"],
-          "price": 2.99,
+          "name": "Sprite",
+          "type": "Soda",
+          "flavors": ["Lemon-Lime", "Cranberry", "Ginger"],
+          "price": 1.79,
           "quantity": 120
+        },
+        {
+          "name": "CocaCola",
+          "type": "Soda",
+          "flavors": ["Classic", "ZeroSugar", "Cherry"],
+          "price": 2.29,
+          "quantity": 90
         }
       ]
     },
@@ -32,25 +38,38 @@
       "name": "Snacks",
       "products": [
         {
-          "name": "Lays Classic",
-          "type": "Potato Chips",
+          "name": "LaysClassic",
+          "type": "PotatoChips",
           "quantity": 120,
           "price": 1.79
         },
         {
           "name": "Doritos",
-          "type": "Tortilla Chips",
-          "flavors": ["Cool Ranch", "Nacho Cheese", "Spicy Sweet Chili"],
+          "type": "TortillaChips",
+          "flavors": ["CoolRanch", "NachoCheese", "SpicySweetChili"],
           "quantity": 90,
           "price": 2.29
         },
-        // Add more snack products as needed
         {
-          "name": "Product Name",
-          "type": "Snack Type",
-          "flavors": ["Flavor 1", "Flavor 2", "Flavor 3"],
-          "price": 1.99,
-          "quantity": 150
+          "name": "Popcorn",
+          "type": "Snack",
+          "flavors": ["Butter", "Cheese", "Caramel"],
+          "quantity": 100,
+          "price": 1.99
+        },
+        {
+          "name": "Pretzels",
+          "type": "Snack",
+          "flavors": ["Classic", "HoneyMustard", "Salted"],
+          "quantity": 80,
+          "price": 2.49
+        },
+        {
+          "name": "GranolaBars",
+          "type": "Snack",
+          "variations": ["ChocolateChip", "Almond", "MixedBerry"],
+          "quantity": 70,
+          "price": 1.99
         }
       ]
     },
@@ -58,41 +77,38 @@
       "name": "Breakfast",
       "products": [
         {
-          "name": "Quaker Oats",
+          "name": "QuakerOats",
           "type": "Oatmeal",
-          "variations": ["Instant", "Steel Cut"],
+          "variations": ["Instant", "SteelCut"],
           "quantity": 50,
           "price": 3.99
         },
         {
-          "name": "Tropicana Orange Juice",
-          "type": "Fruit Juice",
-          "flavors": ["Original", "No Pulp", "Calcium + Vitamin D"],
+          "name": "TropicanaOrangeJuice",
+          "type": "FruitJuice",
+          "flavors": ["Original", "NoPulp", "CalciumVitaminD"],
           "quantity": 70,
           "price": 2.99
-        },
-        // Add more breakfast products as needed
-        {
-          "name": "Product Name",
-          "type": "Breakfast Type",
-          "variations": ["Variation 1", "Variation 2"],
-          "price": 4.49,
-          "quantity": 60
         }
       ]
     },
-    // Add more categories as needed
     {
-      "name": "New Category",
+      "name": "DairyProducts",
       "products": [
         {
-          "name": "New Product",
-          "type": "Product Type",
-          "flavors": ["Flavor 1", "Flavor 2"],
-          "price": 2.49,
-          "quantity": 80
+          "name": "Milk",
+          "type": "Dairy",
+          "variations": ["Whole", "Skimmed", "2%"],
+          "quantity": 60,
+          "price": 1.99
         },
-        // Add more products in the new category as needed
+        {
+          "name": "Cheese",
+          "type": "Dairy",
+          "flavors": ["Cheddar", "Swiss", "Gouda"],
+          "quantity": 40,
+          "price": 3.49
+        }
       ]
     }
   ]
