@@ -293,11 +293,15 @@ header ul li a{
     border: 1px solid transparent;
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border 0.2s ease;
 }
+.content .textBox .cta a.secondary{
 .content .textBox .cta .btn.secondary{
     background: #1c5fd0;
     color: #fff;
     border-color: rgba(255, 255, 255, 0.5);
 }
+.content .textBox .cta a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 .content .textBox .cta .btn:hover{
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -465,6 +469,7 @@ header ul li a{
     .content .textBox .cta{
         justify-content: center;
     }
+    .content .textBox .cta a{
     .content .textBox .cta .btn{
     .content .textBox .cta a{
     .content .textBox .cta .btn{
