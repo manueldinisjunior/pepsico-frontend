@@ -34,6 +34,7 @@ header .logo{
 header ul{
     position: relative;
     display: flex;
+    gap: 10px;
 }
 header ul li{
     list-style: none;
@@ -70,10 +71,15 @@ header ul li a{
 .content .textBox p{
     color: #fff;
 }
+.content .textBox .cta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
 .content .textBox a{
     display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
+    padding: 10px 24px;
     background: #fff;
     color: #111;
     border-radius: 40px;
@@ -81,6 +87,19 @@ header ul li a{
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+.content .textBox a.secondary{
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.content .textBox a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.content .textBox a.secondary:hover{
+    background: rgba(255, 255, 255, 0.25);
 }
 .content .imgBox{
     width: 600px;
@@ -153,18 +172,24 @@ header ul li a{
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(6px);
         z-index: 1;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 0.2s;
+        gap: 16px;
+        padding: 120px 40px 60px;
+        overflow-y: auto;
+        transition: transform 0.3s ease, opacity 0.2s ease;
         visibility: hidden;
         opacity: 0;
+        transform: translateY(-10%);
     }
     header ul.active{ /* Para que aparezca el menu */
         visibility: visible;
         opacity: 1;
+        transform: translateY(0);
     }
     header ul li a{
         display: inline-block;
@@ -209,9 +234,12 @@ header ul li a{
     .content .textBox h2{
         font-size: 3em;
     }
+    .content .textBox .cta{
+        justify-content: center;
+    }
     .content .textBox a{
         font-size: 14px;
-        padding: 8px 15px;
+        padding: 10px 18px;
     }
     .content .imgBox{
         width: 100%;
@@ -230,5 +258,19 @@ header ul li a{
         right: 0;
         width: 50px;
         background: rgba(0,0,0,0.2);
+    }
+}
+
+@media(max-width: 540px){
+    .content .textBox h2{
+        font-size: 2.6em;
+    }
+    .content .textBox .cta{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .content .textBox a{
+        width: 100%;
+        text-align: center;
     }
 }
