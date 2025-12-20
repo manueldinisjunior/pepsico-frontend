@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -231,11 +231,6 @@ header ul li a{
     text-decoration: none;
     font-weight: 600;
 }
-.content .textBox .cta .link{
-    margin-top: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 .link::after{
     content: \"→\";
     margin-left: 8px;
@@ -271,56 +266,18 @@ header ul li a{
     gap: 12px;
     margin-top: 24px;
 }
-.content .textBox .cta .btn{
-.content .textBox .cta a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 24px;
-.content .textBox .cta .btn{
 .content .textBox a{
     display: inline-block;
     padding: 10px 24px;
     background: #fff;
     color: #111;
     border-radius: 40px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    background: #fff;
-    color: #111;
-    border: 1px solid transparent;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border 0.2s ease;
-}
-.content .textBox .cta a.secondary{
-.content .textBox .cta .btn.secondary{
-    background: #1c5fd0;
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.5);
-}
-.content .textBox .cta a:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-.content .textBox .cta .btn:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
-.content .textBox .cta .btn{
-    background: #fff;
-    color: #111;
-}
-.content .textBox .cta .link{
-    background: #1c5fd0;
-    color: #fff;
-}
-.content .textBox .cta a:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-.content .textBox .cta .btn:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 .content .textBox a.secondary{
     background: rgba(255, 255, 255, 0.15);
     color: #fff;
@@ -469,10 +426,6 @@ header ul li a{
     .content .textBox .cta{
         justify-content: center;
     }
-    .content .textBox .cta a{
-    .content .textBox .cta .btn{
-    .content .textBox .cta a{
-    .content .textBox .cta .btn{
     .content .textBox a{
         font-size: 14px;
         padding: 10px 18px;
@@ -517,14 +470,6 @@ header ul li a{
     .content .textBox .cta{
         flex-direction: column;
         align-items: stretch;
-    }
-    .content .textBox .cta a{
-    .content .textBox .cta .btn{
-        width: 100%;
-        text-align: center;
-    }
-    .content .textBox .cta .link{
-        text-align: center;
     }
     .content .textBox a{
         width: 100%;
