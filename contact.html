@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact PepsiCo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec page">
+        <header>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="Pepsi logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="whats-new.html">What's New</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="page-content">
+            <div class="page-hero">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h1>We'd love to hear from you.</h1>
+                    <p>Questions, feedback, or partnership ideas? Drop us a note and our team will respond quickly.</p>
+                </div>
+                <div class="hero-card">
+                    <h3>Support hours</h3>
+                    <p>Monday – Friday, 9:00 AM – 6:00 PM</p>
+                    <p>Email: hello@pepsico.com</p>
+                    <p>Phone: +1 (800) 555-0199</p>
+                </div>
+            </div>
+            <div class="page-section">
+                <h2>Send a message</h2>
+                <form class="form-card">
+                    <label>
+                        Full name
+                        <input type="text" placeholder="Enter your name">
+                    </label>
+                    <label>
+                        Email address
+                        <input type="email" placeholder="Enter your email">
+                    </label>
+                    <label>
+                        Topic
+                        <select>
+                            <option>Product feedback</option>
+                            <option>Order support</option>
+                            <option>Partnerships</option>
+                            <option>Press inquiries</option>
+                        </select>
+                    </label>
+                    <label>
+                        Message
+                        <textarea rows="4" placeholder="Tell us how we can help"></textarea>
+                    </label>
+                    <button class="primary" type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
