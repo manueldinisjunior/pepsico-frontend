@@ -1,6 +1,6 @@
 # PepsiCo Responsive Web Design Project
 
-Welcome to the PepsiCo Responsive Web Design project created as part of Forage program
+Welcome to the PepsiCo Responsive Web Design project created as part of the Forage program
 
 ## Overview
 
