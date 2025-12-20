@@ -272,6 +272,7 @@ header ul li a{
     margin-top: 24px;
 }
 .content .textBox .cta .btn{
+.content .textBox a{
     display: inline-block;
     padding: 10px 24px;
     background: #fff;
@@ -286,6 +287,17 @@ header ul li a{
 .content .textBox .cta .btn:hover{
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+.content .textBox a.secondary{
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.content .textBox a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.content .textBox a.secondary:hover{
+    background: rgba(255, 255, 255, 0.25);
 }
 .content .imgBox{
     width: 600px;
@@ -424,6 +436,7 @@ header ul li a{
         justify-content: center;
     }
     .content .textBox .cta .btn{
+    .content .textBox a{
         font-size: 14px;
         padding: 10px 18px;
     }
@@ -473,6 +486,10 @@ header ul li a{
         text-align: center;
     }
     .content .textBox .cta .link{
+        text-align: center;
+    }
+    .content .textBox a{
+        width: 100%;
         text-align: center;
     }
 }
