@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec page">
+        <header>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="Pepsi logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="whats-new.html">What's New</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="page-content">
+            <div class="page-hero">
+                <div>
+                    <p class="eyebrow">Newsletter</p>
+                    <h1>Get the latest PepsiCo updates.</h1>
+                    <p>Be first to know about new flavors, events, and exclusive offers.</p>
+                </div>
+                <div class="hero-card">
+                    <h3>Why subscribe?</h3>
+                    <ul class="hero-list">
+                        <li>Weekly product drops and sneak peeks</li>
+                        <li>Early access to merch and bundles</li>
+                        <li>Events near you</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-section">
+                <h2>Join the community</h2>
+                <form class="form-card">
+                    <label>
+                        Full name
+                        <input type="text" placeholder="Enter your name">
+                    </label>
+                    <label>
+                        Email address
+                        <input type="email" placeholder="Enter your email">
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        I agree to receive PepsiCo updates and promotions.
+                    </label>
+                    <button class="primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
