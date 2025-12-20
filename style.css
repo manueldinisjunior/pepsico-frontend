@@ -271,6 +271,7 @@ header ul li a{
     gap: 12px;
     margin-top: 24px;
 }
+.content .textBox .cta .btn{
 .content .textBox .cta a{
     display: inline-flex;
     align-items: center;
@@ -287,6 +288,19 @@ header ul li a{
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    background: #fff;
+    color: #111;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+.content .textBox .cta .btn.secondary{
+    background: #1c5fd0;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.content .textBox .cta .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 .content .textBox .cta .btn{
@@ -451,6 +465,7 @@ header ul li a{
     .content .textBox .cta{
         justify-content: center;
     }
+    .content .textBox .cta .btn{
     .content .textBox .cta a{
     .content .textBox .cta .btn{
     .content .textBox a{
